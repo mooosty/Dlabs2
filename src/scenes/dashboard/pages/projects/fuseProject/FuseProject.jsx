@@ -43,7 +43,7 @@ const FuseProject = ({ closeModal }) => {
 
     axios.all(
       multipleSelect.map((p) =>
-        axios.delete(`http://68.183.108.138:3000/api/projects/`, {
+        axios.delete(`https://winwinsocietyweb3.com/api/projects/`, {
           headers: { Authorization: `Bearer ${access_token}` },
           data: {
             projectIds: p.value,
