@@ -27,7 +27,7 @@ const DeleteSynergy = ({ setIsModal }) => {
 
     axios.all(
       selectedMapped.map((s) =>
-        axios.delete(`http://68.183.108.138:3000/api/synergies/`, {
+        axios.delete(`https://winwinsocietyweb3.com/api/synergies/`, {
           headers: { Authorization: `Bearer ${access_token}` },
           data: {
             synergy_id: s.id,
